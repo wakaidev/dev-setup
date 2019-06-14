@@ -138,10 +138,12 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 sudo tmutil disable
 
 # Disable hibernation (speeds up entering sleep mode)
-sudo pmset -a hibernatemode 0
-
+# sudo pmset -a hibernatemode 0
+# changed to hibernatemode 25
+sudo pmset -a hibernatemode 25
 
 # EVENT_TODO disable SIP https://christianvarga.com/how-to-delete-sleepimage-on-macos-high-sierra/
+
 
 # Remove the sleep image file to save disk space
 # sudo rm -f /private/var/vm/sleepimage
@@ -242,6 +244,12 @@ defaults write com.apple.finder QuitMenuItem -bool true
 
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
+
+# Disable animations when opening and closing windows.
+# For Mac High sierra
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+
+
 
 # Set Desktop as the default location for new Finder windows
 # For other paths, use `PfLo` and `file:///full/path/here/`
@@ -853,6 +861,66 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 # defaults write com.divisiblebyzero.Spectacle MoveToUpperRight -data 62706c6973743030d40102030405061a1b582476657273696f6e58246f626a65637473592461726368697665725424746f7012000186a0a40708111255246e756c6cd4090a0b0c0d0e0f10596d6f64696669657273546e616d65576b6579436f64655624636c6173731111008002107c80035f10104d6f7665546f55707065725269676874d2131415165a24636c6173736e616d655824636c61737365735d5a65726f4b6974486f744b6579a31718195d5a65726f4b6974486f744b6579585a4b486f744b6579584e534f626a6563745f100f4e534b657965644172636869766572d11c1d54726f6f74800108111a232d32373c424b555a62696c6e7072858a959eacb0bec7d0e2e5ea0000000000000101000000000000001e000000000000000000000000000000ec
 # defaults write com.divisiblebyzero.Spectacle RedoLastMove -data 62706c6973743030d40102030405061a1b582476657273696f6e58246f626a65637473592461726368697665725424746f7012000186a0a40708111255246e756c6cd4090a0b0c0d0e0f10596d6f64696669657273546e616d65576b6579436f64655624636c617373110b008002100680035c5265646f4c6173744d6f7665d2131415165a24636c6173736e616d655824636c61737365735d5a65726f4b6974486f744b6579a31718195d5a65726f4b6974486f744b6579585a4b486f744b6579584e534f626a6563745f100f4e534b657965644172636869766572d11c1d54726f6f74800108111a232d32373c424b555a62696c6e70727f848f98a6aab8c1cadcdfe40000000000000101000000000000001e000000000000000000000000000000e6
 # defaults write com.divisiblebyzero.Spectacle UndoLastMove -data 62706c6973743030d40102030405061a1b582476657273696f6e58246f626a65637473592461726368697665725424746f7012000186a0a40708111255246e756c6cd4090a0b0c0d0e0f10596d6f64696669657273546e616d65576b6579436f64655624636c6173731109008002100680035c556e646f4c6173744d6f7665d2131415165a24636c6173736e616d655824636c61737365735d5a65726f4b6974486f744b6579a31718195d5a65726f4b6974486f744b6579585a4b486f744b6579584e534f626a6563745f100f4e534b657965644172636869766572d11c1d54726f6f74800108111a232d32373c424b555a62696c6e70727f848f98a6aab8c1cadcdfe40000000000000101000000000000001e000000000000000000000000000000e6
+
+###############################################################################
+# Custom Sleep/Hibernation Settings                                                 #
+###############################################################################
+
+# Capabilities for AC Power:
+#  displaysleep
+sudo pmset -a displaysleep 2
+#  disksleep
+sudo pmset -a disksleep 3
+#  sleep
+sudo pmset -a sleep 4
+#  womp
+sudo pmset -c womp 1
+#  acwake
+sudo pmset -a acwake 0
+#  lidwake
+sudo pmset -a lidwake 1
+#  halfdim
+#  sms
+sudo pmset -a sms 0
+#  standby
+sudo pmset -a standby 1
+#  standbydelay
+sudo pmset -a standbydelay 5
+#  ttyskeepawake
+sudo pmset -a ttyskeepawake 0
+#  hibernatemode
+sudo pmset -a hibernatemode 25
+#  hibernatefile
+sudo pmset -a /hibernation/sleepimage
+#
+# Capabilities for Battery Power:
+#  displaysleep 2
+#  disksleep    3
+#  sleep        4
+#  acwake       0 # set to zero to not wake computer up when charger drops/connects
+#  lidwake      1 #
+#  lessbright
+#  halfdim
+#  sms 0 # has already been set
+#  standby      1
+#  standbydelay 10
+#  ttyskeepawake 0
+#  hibernatemode 25
+#  hibernatefile /hibernation/sleepimage # new location for hibernationfile
+#
+# # Current Settings
+# standbydelay         4200
+#  standby              0
+#  halfdim              1
+#  sms                  0
+#  hibernatefile        /var/vm/sleepimage
+#  disksleep            10
+#  sleep                10 (sleep prevented by nsurlsessiond, nsurlsessiond, nsurlsessiond, nsurlsessiond, nsurlsessiond, nsurlsessiond, nsurlsessiond, nsurlsessiond)
+#  hibernatemode        25
+#  ttyskeepawake        1
+#  displaysleep         2
+#  acwake               0
+#  lidwake              1
 
 ###############################################################################
 # Kill affected applications                                                  #

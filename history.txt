@@ -1,0 +1,137 @@
+history
+    1  cd Downloads
+    2  Last login: Wed Jun  5 20:07:39 on ttys000\n➜  ~ curl -O https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolor\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+    3  curl -O https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolor\n
+    4  brew tap caskroom/fonts
+    5  brew cask install font-hack-nerd-font
+    6  ssh root@wakaiserver.lan
+    7  ssh root@wakaiserver
+    8  ssh root@wakaiserver.local
+    9  ssh mccomasd@wakaiserver.local
+   10  brew install mosh
+   11  mosh mccomasd@wakaiserver.local
+   12  mosh --help
+   13  mosh --ssh = ssh -p 2222 mccomasd@143.59.238.143
+   14  mosh --ssh -p 2222 mccomasd@143.59.238.143
+   15  mosh --ssh=-p 2222 mccomasd@143.59.238.143
+   16  mosh mccomasd@143.59.238.143 --ssh="ssh -p 2222"
+   17  ssh root@143.59.238.143
+   18  sudo defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+   19  sudo defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+   20  sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+   21  defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+   22  launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+   23  sudo tmutil disablelocal
+   24  sudo pmset -a hibernatemode 0
+   25  sudo rm -f /private/var/vm/sleepimage
+   26  sudo pmset -a sms 0
+   27  defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+   28  defaults write com.apple.screensaver askForPassword -int 1
+   29  defaults write com.apple.screensaver askForPasswordDelay -int 0
+   30  brew cask install github-desktop
+   31  brew cask install ticktick
+   32  brew install thefuck
+   33  ls
+   34  ls -a
+   35  sudo nano .zshrc
+   36  eval "$(thefuck --alias)"
+   37  fuck
+   38  brw install cask
+   39  fuck
+   40  ssh mccomasd@wakaiserver.local
+   41  ls
+   42  cd Documents
+   43  ls
+   44  git clone https://github.com/wakaidev/dev-setup.git
+   45  ls
+   46  cd dev-setup
+   47  ls
+   48  pmset -g | grep hibernatemode
+   49  sudo tmutil disablelocal
+   50  sudo tmutil
+   51  sudo tmutil disable
+   52  sudo rm -f /private/var/vm/sleepimage
+   53  sudo rm /private/var/vm/sleepimage
+   54  git status
+   55  git commit -a
+   56  git push
+   57  git config
+   58  git config --local
+   59  git config --global user.email ""
+   60  git push
+   61  git config --global user.email "{ID}+{username}@users.noreply.github.com"`\n\n
+   62  git config --global user.email "{ID}+{username}@users.noreply.github.com"\n\n
+   63  git commit --amend --reset-author
+   64  git push
+   65  AssetCacheManagerUtil settings
+   66  AssetCacheManagerUtil status
+   67  AssetCacheManagerUtil isActivated
+   68  AssetCacheManagerUtil canActivated
+   69  AssetCacheManagerUtil canActivate
+   70  sudo nano /Library/Preferences/com.apple.AssetCache.plist
+   71  AssetCacheManagerUtil reloadSettings
+   72  sudo AssetCacheManagerUtil reloadSettings
+   73                                         
+   74  \n
+   75  launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+   76  killall NotificationCenter
+   77  sudo rm -f /private/var/vm/sleepimage
+   78  sudo touch /private/var/vm/sleepimage
+   79  sudo chflags uchg /private/var/vm/sleepimage
+   80  defaults write com.apple.screensaver askForPassword -int 1
+   81  defaults write com.apple.screensaver askForPasswordDelay -int 0
+   82  defaults write com.apple.finder DisableAllAnimations -bool true
+   83  defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+   84  defaults write com.apple.finder QuitMenuItem -bool true
+   85  defaults write com.apple.finder AppleShowAllFiles -bool true
+   86  defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+   87  defaults write com.apple.finder ShowPathbar -bool true
+   88  defaults write com.apple.finder QLEnableTextSelection -bool true
+   89  defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+   90  Last login: Thu Jun 13 20:39:40 on ttys003\n          %                                                                                                                                                                          ➜  ~\nzsh: command not found:\n➜  ~\n➜  ~\n➜  ~\n\n➜  ~\n\n➜  ~\n\n➜  ~ launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null\n➜  ~ killall NotificationCenter\nNo matching processes belonging to you were found\n➜  ~ sudo rm -f /private/var/vm/sleepimage\nPassword:\n➜  ~ sudo touch /private/var/vm/sleepimage\n➜  ~ sudo chflags uchg /private/var/vm/sleepimage\n➜  ~ defaults write com.apple.screensaver askForPassword -int 1\n➜  ~ defaults write com.apple.screensaver askForPasswordDelay -int 0\n➜  ~ defaults write com.apple.finder DisableAllAnimations -bool true\n➜  ~ defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false\n➜  ~ defaults write com.apple.finder QuitMenuItem -bool true\n➜  ~ defaults write com.apple.finder AppleShowAllFiles -bool true\n➜  ~ defaults write NSGlobalDomain AppleShowAllExtensions -bool true\n➜  ~ defaults write com.apple.finder ShowPathbar -bool true\n➜  ~ defaults write com.apple.finder QLEnableTextSelection -bool true\n➜  ~ defaults write com.apple.finder FXEnableExtensionChangeWarning -b
+   91  defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+   92  defaults write com.apple.frameworks.diskimages skip-verify -bool true
+   93  defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
+   94  defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
+   95  defaults write com.apple.finder WarnOnEmptyTrash -bool false
+   96  defaults write com.apple.finder EmptyTrashSecurely -bool true
+   97  chflags nohidden ~/Library
+   98  defaults write com.apple.dock minimize-to-application -bool true
+   99  defaults write com.apple.dock launchanim -bool false
+  100  defaults write com.apple.dock autohide-delay -float 0
+  101  defaults write com.apple.dock autohide-time-modifier -float 0
+  102  defaults write com.apple.dock autohide -bool true
+  103  defaults write com.apple.Safari HomePage -string "about:blank"
+  104  defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+  105  defaults write com.apple.Safari IncludeDevelopMenu -bool true
+  106  defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+  107  defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+  108  defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+  109  defaults write com.apple.ActivityMonitor IconType -int 5
+  110  defaults write com.apple.ActivityMonitor ShowCategory -int 0
+  111  defaults write com.apple.TextEdit RichText -int 0
+  112  defaults write com.apple.TextEdit PlainTextEncoding -int 4
+  113  defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
+  114  defaults write com.apple.TextEdit "TabWidth" '4'
+  115  defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
+  116  defaults write com.apple.DiskUtility advanced-image-options -bool true
+  117  defaults write com.apple.appstore WebKitDeveloperExtras -bool true\n
+  118  defaults write com.apple.appstore ShowDebugMenu -bool true\n
+  119  pmset
+  120  pmset -c
+  121  man pmset
+  122  pmset -g
+  123  man pmset
+  124  brew update
+  125* brew upgrade
+  126  history
+  127  ls
+  128  cd Documents
+  129  ls
+  130  cd dev-setup
+  131  ls
+  132  touch history.txt
+  133  ls
+  134  echo history >> history.txt
+  135  nano history.txt
+  136  history
