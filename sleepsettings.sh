@@ -34,7 +34,10 @@ sudo pmset -a ttyskeepawake 0
 sudo pmset -a hibernatemode 25
 #  hibernatefile
 sudo pmset -a hibernatefile /hibernation/sleepimage
-#
+#  networkoversleep while plugged in
+sudo pmset -c networkoversleep 1
+
+
 
 # EVENT_TODO Change settings for when computer is plugged in
 
