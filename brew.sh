@@ -113,7 +113,9 @@ brew install imagemagick --with-webp
 brew install lua
 brew install lynx
 brew install p7zip
+# pigz Parallel gzip https://zlib.net/pigz/
 brew install pigz
+# pipeviewer Monitor data's progress through a pipe
 brew install pv
 brew install rename
 brew install rhino
