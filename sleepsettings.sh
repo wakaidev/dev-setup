@@ -35,6 +35,10 @@ sudo pmset -a hibernatemode 25
 #  hibernatefile
 sudo pmset -a hibernatefile /hibernation/sleepimage
 #
+
+# EVENT_TODO Change settings for when computer is plugged in
+
+
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
     "Dock" "Finder" "Mail" "Messages" \
     "Safari" "SystemUIServer" \
