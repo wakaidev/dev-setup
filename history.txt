@@ -135,3 +135,4 @@ history
   134  echo history >> history.txt
   135  nano history.txt
   136  history
+history
